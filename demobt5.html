@@ -10,11 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <style>
         .cardstyle1{
-            width: 450px;
+            width: 400px;
             background-color: #eee;
             border: rgb(104, 82, 82);
         }.fontstyle1{
             font-family: "標楷體";
+        }
+        .cardstyle2{
+            width: 400px;
+            background-color: #eee;
+            border: rgb(104, 82, 82);
         }
     </style>
     <title>Document</title>
@@ -24,16 +29,25 @@
         <div class="container">
             <h1>Card Demo</h1>
             <div class="card cardstyle1">
-                <div class="card-header">Card首頁</div>
+                <div class="card-header">本月主打商品</div>
                 <div class="card-body">
                     <h4 class="card-title fontstyle1">超好吃漢堡</h4>
                     <p><img src="../images/food.jpg" class="img-fluid rounded" width="95%"></p>
                     <p class="card-text">必吃!超好吃漢堡</p>
-                    <a href="#" class="card-link">NT$ 120</a>
+                    <a href="#" class="card-link text-decoration-none text-danger bw-bold">NT$ 120</a>
 
                 </div>
-                <div class="card-footer">Card頁尾</div>
-                <div></div>
+                <div class="card-footer">9折優惠</div>
+            </div>
+            <hr>
+            <div class="card cardstyle2">
+                <div class="card-body">
+                    <p><img src="../images/food.jpg" class="card-img-top img-fluid"></p>
+                    <h4 class="card-title fontstyle1">超好吃漢堡</h4>
+                    <p class="card-text">必吃!超好吃漢堡</p>
+                    <a href="#" class="btn btn-danger">NT$ 120</a>
+                    <a href="#" class="btn btn-primary">詳細資訊</a>
+                </div>
             </div>
         </div>
     </div>
