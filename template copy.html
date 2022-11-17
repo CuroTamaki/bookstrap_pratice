@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>demo 3</title>
+    <style>
+        .btnstyle1{
+            font-family: "標楷體";
+            color: cadetblue;
+            background-color: darkolivegreen;
+        }.btnstyle1:hover{
+            transform: scale(1.05);
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Badge Demo</h1>
+        <h2>新產品推出<span class="badge bg-primary">new</span></h2>
+        <h3>超便宜商品<span class="badge bg-danger">特賣</span></h3>
+        <h4>特賣商品只有<span class="badge rounded-pill bg-success">24HR</span></h4>
+        <h2>
+            <!-- badge可以包badge -->
+            <span class="badge bg-primary">
+                您有新訊息
+                <span class="badge bg-danger"><a href="#" class="text-decoration-none text-white">88</a></span>則
+            </span>
+        </h2>
+        <hr>
+        <h1>Button Style Demo</h1>
+        <a href="http://www.microsoft.com" target="_new" class="btn btn-primary">微軟網站</a>
+        <a href="http://www.google.com" target="_new" class="btn btn-secondary">谷歌引擎</a>
+        <a href="http://www.apple.com" target="_new" class="btn btn-outline-success">蘋果官網</a>
+        <hr>
+        <input type="submit" value="送出資料" class="btn btn-info btn-outline-warning">
+        <input type="reset" value="重置資料" class="btn btn-outline-warning">
+        <button type="button" class="btn btn-danger">刪除資料</button>
+        <hr>
+        <a href="#" class="btn btnstyle1">自訂按鈕樣式</a>
+        <hr>
+        <div class="d-grid ">
+            <a href="http://www.samsung.com.tw" target="_new" class="btn btn-primary btn-lg"></a>
+        </div>
+        <hr>
+        <div class="btn-group">
+            <a href="http://www.microsoft.com" target="_new" class="btn btn-primary">微軟網站</a>
+            <a href="http://www.google.com" target="_new" class="btn btn-secondary">谷歌引擎</a>
+            <a href="http://www.apple.com" target="_new" class="btn btn-outline-success">蘋果官網</a>
+        </div>
+        <hr>
+        <div class="btn-group btn-group-lg">
+            <!-- sm [md] lg -->
+            <a href="http://www.microsoft.com" target="_new" class="btn btn-primary">微軟網站</a>
+            <a href="http://www.google.com" target="_new" class="btn btn-secondary">谷歌引擎</a>
+            <a href="http://www.apple.com" target="_new" class="btn btn-outline-success">蘋果官網</a>
+        </div>
+        <hr>
+        <div class="btn-group-vertical">
+            <a href="http://www.microsoft.com" target="_new" class="btn btn-primary">微軟網站</a>
+            <a href="http://www.google.com" target="_new" class="btn btn-secondary">谷歌引擎</a>
+            <a href="http://www.apple.com" target="_new" class="btn btn-outline-success">蘋果官網</a>
+        </div>
+        <hr>
+        <div class="btn-group d-flex">
+            <!-- 動態彈性的寬度 -->
+            <a href="http://www.microsoft.com" target="_new" class="btn btn-primary">微軟網站</a>
+            <a href="http://www.google.com" target="_new" class="btn btn-secondary">谷歌引擎</a>
+            <a href="http://www.apple.com" target="_new" class="btn btn-outline-success">蘋果官網</a>
+        </div>
+        <hr>
+        <h1>Alert Demo</h1>
+        <div class="alert alert-primary alert-dismissible">會員登入成功
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <div class="alert alert-success alert-dismissible ">
+            您的<a href="#" class="alert-link">商品</a>已訂購完成
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show">
+            恭喜您抽種<a href="#" class="alert-link">頭獎</a>!!!
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+
+
+
+    </div>
+    <br><br><br><br><br>
+</body>
+</html>
