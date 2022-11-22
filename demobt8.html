@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+            .cardstyle1{
+            width: 400px;
+            background-color: #eee;
+            border: rgb(104, 82, 82);}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>List Group Demo</h1>
+        <h3>demo 1.</h3>
+        <ul class="list-group">
+            <li class="list-group-item active bg-info">第一個項目</li>
+            <li class="list-group-item">第二個項目</li>
+            <li class="list-group-item disabled">第三個項目</li>
+            <li class="list-group-item">第四個項目</li>
+        </ul>
+        <hr>
+        <h3>demo 2.</h3>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">第一個項目</a>
+            <a href="#" class="list-group-item list-group-item-action">第二個項目</a>
+            <a href="#" class="list-group-item list-group-item-action disabled">第三個項目</a>
+            <a href="#" class="list-group-item list-group-item-action">第四個項目</a>
+        </div>
+        <hr>
+        <h3>demo 3.</h3>
+        <div class="list-group display-7">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">蘋果
+                <span class="badge rounded-pill bg-danger mx-2">13</span></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">橘子
+                <span class="badge rounded-pill bg-warning mx-2">8</span></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">葡萄
+                <span class="badge rounded-pill bg-primary mx-2">21</span></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">西瓜
+                <span class="badge rounded-pill bg-info mx-2">10</span></a>
+            </a>
+        </div>
+        <hr>
+        <h1>Dropdown Demo</h1>
+        <h3>Demo 1.</h3>
+        <div class="dropdown dropend" >
+            <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">項目列表</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">產品項目 one</a>
+                <a href="#" class="dropdown-item active">產品項目 two</a>
+                <a href="#" class="dropdown-item">產品項目 three</a>
+                <a href="#" class="dropdown-item">產品項目 four</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">產品項目 five</a>
+                <a href="#" class="dropdown-item">產品項目 six</a>
+                <a href="#" class="dropdown-item">產品項目 seven</a>
+            </div>
+        </div>
+        <hr>
+        <h3>Demo 2.</h3>
+        <div class="btn-group" >
+            <button class="btn btn-info" data-bs-toggle="dropdown">按鈕one</button>
+            <button class="btn btn-danger" data-bs-toggle="dropdown">按鈕two</button>
+            <div class="btn-group dropend">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#pro">項目列表</button>
+                <div class="dropdown-menu" id="pro">
+                    <a href="#" class="dropdown-item">產品項目 one</a>
+                    <a href="#" class="dropdown-item active">產品項目 two</a>
+                    <a href="#" class="dropdown-item">產品項目 three</a>
+                    <a href="#" class="dropdown-item">產品項目 four</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">產品項目 five</a>
+                    <a href="#" class="dropdown-item">產品項目 six</a>
+                    <a href="#" class="dropdown-item">產品項目 seven</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+            <h1>Collection Demo</h1>
+            <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#monthtop">收合式內容</button>
+            <div id="monthtop" class="collapse">
+                <div class="card cardstyle1">
+                    <div class="card-header">本月主打商品</div>
+                    <div class="card-body">
+                        <h4 class="card-title fontstyle1">超好吃漢堡</h4>
+                        <p><img src="../images/food.jpg" class="img-fluid rounded" width="95%"></p>
+                        <p class="card-text">必吃!超好吃漢堡</p>
+                        <a href="#" class="card-link text-decoration-none text-danger bw-bold">NT$ 120</a>
+                    </div>
+                    <div class="card-footer">9折優惠</div>
+                </div>
+            </div>
+
+            
+        
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+</body>
+</html>
