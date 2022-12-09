@@ -11,6 +11,77 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Modal</h1>
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalOne">
+            開啟Modal視窗
+        </button>
+        <div id="modalOne" class="modal fade">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <!--sm,md,lg,xl-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">這是modal的標題</h3>
+                        <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            這是modal的內文. 這是modal的內文. 這是modal的內文. 這是modal的內文. 這是modal的內文. 這是modal的內文. 這是modal的內文. 這是modal的內文. 這是modal的內文. 這是modal的內文. 這是modal的內文. 這是modal的內文. 這是modal的內文. 
+                        </p>
+                        <div class="text-center">
+                            <img src="/images/01.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" type="button" data-bs-dismiss="modal">關閉</button>
+                        <a href="https://www.gooogle.com.tw/" target="_new" class="btn btn-secondary">看更多關閉</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1>Tooltip</h1>
+        <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="我是Tooltip">Hover測試Tooltip</a>
+        <!-- placement:top bottom left right -->
+        <hr>
+        <h1>Popover</h1>
+        <a href="#" class="btn btn-success" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover測試" data-bs-content="Popover內文">點擊測試</a>
+        <hr>
+        <h1>Toast</h1>
+        <button type="button" class="btn btn-info" id="myToastButton">打開Toast</button>
+        <div class="toast" data-bs-autohide="true" data-bs-delay="5000">
+            <div class="toast-header">
+                <h5 class="me-auto">Toast標題</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Toast內文<br>
+                Toast內文<br>
+                Toast內文<br>
+                Toast內文<br>
+                Toast內文<br>
+                Toast內文<br>
+                Toast內文<br>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+
+    <script>
+        // Tooptip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll(`[data-bs-toggle="tooltip"]`))
+        var tooltipList =tooltipTriggerList.map(function(tooltipTriggerEl){return new bootstrap.Tooltip(tooltipTriggerEl)})
+        // Popover
+        var popoverTriggerLsist =[].slice.call(document.querySelectorAll(`[ data-bs-toggle="popover"]`))
+        var popoverList = popoverTriggerLsist.map(function(popoverTriggerEl){return new bootstrap.Popover(popoverTriggerEl)})
+        //Toast
+        document.getElementById("myToastButton").onclick =function(){
+            var toastTriggerList = [].slice.call(document.querySelectorAll(".toast"))
+            var toastList = toastTriggerList.map(function(toastTriggerEl){
+                return new bootstrap.Toast(toastTriggerEl)
+            })
+            toastList.forEach(toast => toast.show() );
+        }
+    </script>
 </body>
 </html>
